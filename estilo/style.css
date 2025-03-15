@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+:root{
+    --cor01:#592A19;
+    --cor02:#A68051;
+    --cor03:#BF9A56;
+    --cor04:#BF9D7E;
+    --cor05: #f1d6cd;
+
+    --fonte-padrao: Verdana, Arial, sans-serif;
+    --fonte-estilo: Georgia, EBGaramond, serif;
+}
+body{
+
+    background-color: var(--cor05);
+}
+header{
+   background-image:linear-gradient(to bottom, var(--cor04), var(--cor02));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: var(--fonte-estilo);
+    }
+header > h1{
+font-family: var(--fonte-estilo);
+font-size: 3em;
+color: white;
+text-shadow: 2px 2px 0px var(--cor01);
+letter-spacing: 0.4rem;
+margin-bottom: 15px;
+
+}
+header > p{
+    max-width: 300px;
+    margin: auto;
+    padding-bottom: 8px;
+    text-shadow: 2px 2px 0px var(--cor02);
+    font-family: var(--fonte-padrao);
+    font-size: 1.6em;
+    letter-spacing: 0.2rem;
+}
+
+nav {
+ background-color: var(--cor02) ;   
+ padding: 10px;
+ box-shadow: 0px 7px 7px var(--cor01);
+ margin-bottom: 10px;
+}
+
+nav > a{
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor01);
+
+}
+
+img{
+    width: 95%; 
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+
+    }
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1000px;
+}
+
+main  h2 {
+    font-size: 1.5em;
+    color: var(--cor01);
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    padding: 10px;
+    text-align: center;
+}
+main  h3 {
+    font-size: 1.4em;
+    color: var(--cor02);
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    padding: 10px;
+    text-align: center;
+}
+main p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    line-height: 1.5em;
+    margin: 15px 20px 15px 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+div.video{
+    background-color: var(--cor04);
+    margin-bottom: 10px;
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 55.5%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+aside{
+    background-color: var(--cor04);
+    padding: 20px;
+    margin: 25px;
+    border-radius: 8px;
+
+}
+aside > h3{
+    
+}
+
+aside > ul{
+    list-style-type: "\2714\00a0\00a0";
+    list-style-position: inside;
+    columns: 2;
+
+}
+footer {
+    background-color: var(--cor02);
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+}
